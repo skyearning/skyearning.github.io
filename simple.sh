@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "Starting program at $(date)" 
+echo "Starting program at $(date) ..." 
 
 echo "Running program $0 with $# arguments with pid $$" 
 
