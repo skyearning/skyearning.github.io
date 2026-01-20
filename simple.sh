@@ -2,8 +2,6 @@
 
 echo "Starting program at $(date) ..." 
 
-echo "Test with Shellcheck"
-
 echo "Running program $0 with $# arguments with pid $$" 
 
 for file in "$@"; do 
