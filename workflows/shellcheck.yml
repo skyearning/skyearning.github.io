@@ -1,16 +1,15 @@
-on:
-  push:
-    branches:
-      - main
+name: ShellCheck
 
-name: "Trigger: Push action"
-permissions: {}
+# Run this workflow on every push or manual trigger
+on: [push, workflow_dispatch]
 
 jobs:
   shellcheck:
     name: Shellcheck
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@master
